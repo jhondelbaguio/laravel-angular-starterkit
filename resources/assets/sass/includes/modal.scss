@@ -1,0 +1,19 @@
+.modal-content{
+	background-clip:padding-box;
+	@include border-radius(4px); 
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.modal-title{
+	font-size:18px;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+     transform: translate(0, 0);
+}
+
+.modal-content{
+	@include animation(fadeIn 0.5s ease);
+}
